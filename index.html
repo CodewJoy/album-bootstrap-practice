@@ -1,0 +1,235 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Album example_BootStrap</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <div class="pos-f-t">
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-dark p-4">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 text-white ">
+              <h4>About</h4>
+              <p class="text-secondary">Add some information about the album below, the author, or any other background
+                context. Make it a few
+                sentences long so folks can pick up some informative tidbits. Then, link them off to some social
+                networking sites or contact information.</p>
+            </div>
+            <div class="col-sm-4 text-white">
+              <!--用list排版會比p好看，p空格會很大  -->
+              <h4>Contact</h4>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#" class="text-white">Follow on Twitter</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white">Like on Facebook</a>
+                </li>
+                <li>
+                  <a href="#" class="text-white">Email me</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <nav class="navbar navbar-dark bg-dark">
+      <!-- 記得加d-flex justify-content-between -->
+      <div class="container d-flex justify-content-between">
+        <a class="navbar-brand" href="#">
+          <strong>Album</strong>
+        </a>
+        <button class="navbar-toggler justify-content-end" type="button" data-toggle="collapse"
+          data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </nav>
+  </div>
+
+
+  <main>
+    <!-- Typography -->
+    <div class="section text-center bg-white">
+      <div class="container py-5 my-3">
+        <h1>Album example</h1>
+        <p class="lead text-secondary">
+          Something short and leading about the collection below—its contents, the creator, etc. Make it short and
+          sweet, but not too short so folks don’t simply skip over it entirely.
+        </p>
+        <!-- button 記得要用a標籤-->
+        <a href="#" class="btn btn-primary">Main call to action</a>
+        <a href="#" class="btn btn-secondary">Secondary action</a>
+      </div>
+    </div>
+
+    <!-- Card -->
+    <!-- 1st row -->
+    <div class="py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 py-2">
+            <div class="card">
+              <img src="./img/img-1.jpg" class="card-img-top img-fluid" alt="Responsive image">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <!-- 不用加container，加了往內縮，反而讓按鈕沒有對齊上面文字左側 -->
+                <!-- 補加上flex的align-items-center讓按鈕跟文字對齊中間水平線 -->
+                <!-- 對齊main用justify-content-between，對齊cross用align-items-center -->
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                    <!-- 加上btn-sm讓按鈕更小 -->
+                    <a href="#" class="btn btn-sm btn-outline-secondary">View</a>
+                    <a href="#" class="btn btn-sm btn-outline-secondary">Edit</a>
+                  </div>
+                  <p class="card-text"><small class="text-muted">9 mins</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 py-2">
+            <div class="card">
+              <img src="./img/img-2.jpg" class="card-img-top img-fluid" alt="Responsive image">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                    <a href="#" class="btn btn-sm btn-outline-secondary">View</a>
+                    <a href="#" class="btn btn-sm btn-outline-secondary">Edit</a>
+                  </div>
+                  <p class="card-text"><small class="text-muted">9 mins</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 py-2">
+            <div class="card">
+              <img src="./img/img-3.jpg" class="card-img-top img-fluid" alt="Responsive image">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                    <a href="#" class="btn btn-sm btn-outline-secondary">View</a>
+                    <a href="#" class="btn btn-sm btn-outline-secondary">Edit</a>
+                  </div>
+                  <p class="card-text"><small class="text-muted">9 mins</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+      <!-- 2nd row -->
+      <div class="container">
+        <div class="row">
+
+          <div class="col-md-4 py-2">
+            <div class="card">
+              <img src="./img/img-4.jpg" class="card-img-top img-fluid" alt="Responsive image">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                    <a href="#" class="btn btn-sm btn-outline-secondary">View</a>
+                    <a href="#" class="btn btn-sm btn-outline-secondary">Edit</a>
+                  </div>
+                  <p class="card-text"><small class="text-muted">9 mins</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 py-2">
+            <div class="card">
+              <img src="./img/img-5.jpg" class="card-img-top img-fluid" alt="Responsive image">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                    <a href="#" class="btn btn-sm btn-outline-secondary">View</a>
+                    <a href="#" class="btn btn-sm btn-outline-secondary">Edit</a>
+                  </div>
+                  <p class="card-text"><small class="text-muted">9 mins</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 py-2">
+            <div class="card">
+              <img src="./img/img-6.jpg" class="card-img-top img-fluid" alt="Responsive image">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                  content. This content is a little bit longer.</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                    <a href="#" class="btn btn-sm btn-outline-secondary">View</a>
+                    <a href="#" class="btn btn-sm btn-outline-secondary">Edit</a>
+                  </div>
+                  <p class="card-text"><small class="text-muted">9 mins</small></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+  <!-- Typography -->
+  <footer class="container py-4 d-flex justify-content-between">
+    <ul class="list-unstyled">
+      <li>
+        Album example is © Bootstrap, but please download and customize it for yourself!
+      </li>
+      <li>
+        New to Bootstrap?
+        <a href="https://getbootstrap.com/">Visit the homepage</a>
+        or
+        <a href="https://getbootstrap.com/docs/4.3/getting-started/introduction/">read our getting started guide</a>
+        .
+      </li>
+    </ul>
+    <a href="#">Back to top</a>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
