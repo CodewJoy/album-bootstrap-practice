@@ -1,2 +1,6 @@
 # album-bootstrap-practice
-### BootStrap Framework
+
+Demo Link : https://codewjoy.github.io/album-bootstrap-practice/
+
+## Technologies
+* BootStrap
